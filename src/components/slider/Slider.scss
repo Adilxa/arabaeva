@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 15px 30px;
+  margin: 0 30px;
+
+  img {
+    height: 100px;
+    width: 30px;
+  }
+
+  .slick-slider {
+    gap: 40px;
+    .slick-list {
+      margin: 20px;
+    }
+  }
+}

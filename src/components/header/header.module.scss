@@ -1,0 +1,151 @@
+header {
+  width: 100%;
+  height: 35vh;
+  text-align: center;
+  padding: 0 5%;
+  background-color: rgba(191, 118, 75, 0.861);
+
+  .topHeader {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      gap: 20px;
+
+      img {
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    .center {
+      gap: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        color: rgba(255, 255, 255, 0.459);
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 300;
+        transition: ease-in-out .4s;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .rigth {
+      gap: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: rgba(255, 255, 255, 0.459);
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 300;
+        transition: ease-in-out .4s;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+
+  .mainHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+
+    .left {
+      width: 20%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .rigth {
+      display: flex;
+      align-items: center;
+      width: 70%;
+      justify-content: space-between;
+    }
+  }
+
+  .bottomHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 20%;
+
+    h1 {
+      font-size: 10px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.312);
+      cursor: pointer;
+      transition: ease-in-out .4s;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.707);
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 15px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+
+#mainHeaderElement {
+  display: flex;
+  height: 10%;
+  gap: 10px;
+
+  .l {
+    width: 35px;
+    height: 35px;
+  }
+
+  .r {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    p {
+      color: rgba(255, 255, 255, 0.765);
+      font-size: small;
+    }
+
+    h4 {
+      color: rgba(255, 255, 255, 0.965);
+      font-size: small;
+    }
+  }
+}
