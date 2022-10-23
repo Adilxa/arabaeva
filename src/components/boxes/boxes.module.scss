@@ -1,0 +1,19 @@
+.boxes{
+  width: 100%;
+  background-color:rgb(189, 139, 139) ;
+  height: 30vh;
+  
+  .container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    .box{
+      width: 200px;
+      height: 150px;
+      background-color: rgb(63, 36, 36);
+    }
+  }
+}

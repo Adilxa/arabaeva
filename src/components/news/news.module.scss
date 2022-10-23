@@ -1,0 +1,75 @@
+.allNews {
+  display: flex;
+  width: 80%;
+  height: 130vh;
+  margin: 0 auto;
+  .arabaevPress {
+    width: 25%;
+    background-color: rgba(228, 157, 157, 0.152);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content:space-around;
+    padding-top: 70px;
+  }
+
+  .center {
+    width: 45%;
+    gap: 15px;
+    margin-top: 64px;
+  }
+  .line{
+    width: 2px;
+    background-color: rgb(63, 28, 28);
+    height: 90%;
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  .akipress{
+    width: 30%;
+    margin-top: 63px;
+    margin-left: 50px;
+    .akipres{
+      width: 80%;
+      padding: 5px 10px;
+      border: 2px solid rgb(128, 67, 67);
+      text-align: center;
+      h2{
+        width: 100%;
+      }
+    }
+    .portal{
+      width: 80%;
+      h3{
+        font-weight: 900;
+        margin: 20px 0;
+      }
+      h1{
+        font-weight: 900;
+        text-align: center;
+      }
+      section{
+        margin: 40px 0;
+        h3{
+          padding: 5px 10px;
+          background-color: rgb(78, 32, 32);
+          color: white;
+          font-size: 11px;
+          font-weight: 300;
+          line-height: 20px;
+        }
+        li{
+          margin-left: 7%;
+          list-style-type: square;
+          color: brown;
+          h5{
+            font-size: 15px;
+            font-weight: 500;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

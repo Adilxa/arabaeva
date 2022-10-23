@@ -1,0 +1,73 @@
+.slick-arrow {
+  padding-top: 10px;
+  margin-right: 35px;
+  &::before {
+    content: 'ЕЩЕ БОЛЬШЕ НОВОСТЕЙ';
+    font-size: 10px;
+    color: white;
+    font-weight: 600;
+    transition: ease-in-out .4s;
+    line-height: 15px;
+
+    &:hover {
+      color: wheat;
+    }
+  }
+}
+
+.next {
+  position: absolute;
+  right: 0;
+
+  h3 {
+    transition: ease-in-out .4s;
+    font-size: 11px;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.493);
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.shade {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  filter: blur(5px);
+  height: 50px;
+  width: 100%;
+  margin-top: -8px;
+  box-shadow: 0px 0px 900px 0px rgb(255, 255, 255);
+}
+
+hr{
+  width: 75%;
+  height: 2px;
+  margin: 0 auto;
+  color: black;
+}
+
+.slider {
+  width: 75%;
+  margin: 0 auto;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+
+  .slick-slider {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    .slick-list {
+      width: 100%;
+
+      .slick-track {
+        width: 100%;
+
+      }
+    }
+  }
+}

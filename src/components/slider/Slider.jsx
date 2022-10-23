@@ -43,11 +43,11 @@ export default memo(function mainSlider() {
   return (
     <div className="wrapper">
       <Slider {...settings}>
-        {
-          Slide.map((el) => (
-            <SliderCard title={el.title} id={el.id}/>
-        ))
-        }
+          {
+            Slide.map((el) => (
+              <SliderCard title={el.title} id={el.id} />
+            ))
+          }
       </Slider>
     </div>
   )
