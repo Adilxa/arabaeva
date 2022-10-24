@@ -1,0 +1,18 @@
+.colItem {
+  h4{
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    width: 90%;
+    margin-top: 20px;
+  }
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+      font-size:11px ;
+      margin-top: 10px;
+    }
+  }
+}

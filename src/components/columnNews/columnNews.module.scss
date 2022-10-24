@@ -1,0 +1,55 @@
+.colums {
+  width: 80%;
+  margin: 0 auto;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  div {
+    header {
+      width: 100%;
+      height: fit-content;
+      background-color: rgb(207, 127, 70);
+
+      p {
+        font-size: 11px;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 0;
+        font-weight: 100;
+      }
+    }
+    footer {
+      width: 100%;
+      margin-top: 15px;
+      height: 6vh;
+      background-color: rgb(61, 43, 29);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 25%;
+      h4 {
+        font-size: small;
+        color: white;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .left {
+    width: 28%;
+  }
+
+  .mid {
+    width: 28%;
+  }
+
+  .rigth {
+    width: 28%;
+  }
+}
