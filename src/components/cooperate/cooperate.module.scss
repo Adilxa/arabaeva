@@ -1,9 +1,16 @@
+@import "../globalVariables.scss";
+
 .main {
   width: 100%;
   background-color: rgb(165, 91, 42);
   text-align: center;
   margin-top: 50px;
   padding-bottom: 50px;
+
+  @include breackpoint(lg) {
+    display: none;
+  }
+
   p {
     color: white;
     font-size: large;
@@ -24,6 +31,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 15px;
+
       .circle {
         width: 150px;
         height: 150px;
@@ -38,6 +46,7 @@
       }
     }
   }
+
   .circle {
     width: 80%;
     margin: 0 auto;
@@ -52,6 +61,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 15px;
+
       .circle {
         width: 150px;
         height: 150px;

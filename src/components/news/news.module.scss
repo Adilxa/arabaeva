@@ -1,8 +1,13 @@
+@import "../globalVariables.scss";
+
 .allNews {
   display: flex;
   width: 80%;
   height: 130vh;
   margin: 0 auto;
+  @include breackpoint(lg) {
+    display: none;
+  }
   .arabaevPress {
     width: 25%;
     background-color: rgba(228, 157, 157, 0.152);

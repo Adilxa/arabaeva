@@ -1,6 +1,8 @@
+@import "../globalVariables.scss";
 .slick-arrow {
   padding-top: 10px;
   margin-right: 35px;
+
   &::before {
     content: 'ЕЩЕ БОЛЬШЕ НОВОСТЕЙ';
     font-size: 10px;
@@ -18,7 +20,6 @@
 .next {
   position: absolute;
   right: 0;
-
   h3 {
     transition: ease-in-out .4s;
     font-size: 11px;
@@ -36,6 +37,9 @@
 .shade {
   position: absolute;
   background-color: rgb(255, 255, 255);
+  @include breackpoint(lg) {
+    display: none;
+  }
   filter: blur(5px);
   height: 50px;
   width: 100%;
@@ -53,14 +57,19 @@ hr{
 .slider {
   width: 75%;
   margin: 0 auto;
-  height: 30vh;
+  height: 20vh;
   display: flex;
   align-items: center;
-
+  height: 20vh;
+  @include breackpoint(lg) {
+    width: 75%;
+  }
   .slick-slider {
     width: 100%;
-    margin-bottom: 50px;
     display: flex;
+    @include breackpoint(lg) {
+      margin-bottom: 10px;
+    }
     .slick-list {
       width: 100%;
 
@@ -69,5 +78,13 @@ hr{
 
       }
     }
+  }
+}
+
+.all{
+  height: 20vh;
+  display: block;
+  @include breackpoint(lg) {
+    display: none;
   }
 }

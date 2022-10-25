@@ -16,12 +16,15 @@ export default function Footer() {
             <img src="./images/8.png" alt="" />
             <img src="./images/9.png" alt="" />
           </div>
+          
           <div className={css.rigth}>
             <p>720026, Г. БИШКЕК, УЛ. РАЗЗАКОВА, 51А.
               ПРИЁМНАЯ РЕКТОРА: +(0312) 66-03-47
               ПРЕСС-СЛУЖБА: +(0312) 66-47-73
               I.ARABAEV@MAIL.RU WWW.YOURDOMAIN.COM</p>
+              <img src="./images/logo.png" alt="" />
           </div>
+          
         </div>
       </div>
       <div className={css.footerBottom}>

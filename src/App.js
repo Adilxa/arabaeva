@@ -22,7 +22,7 @@ function App() {
       <OurInstitutes />
       <SanSport />
       <Coopearate />
-      <Footer />
+      <Footer /> 
     </>
   );
 }

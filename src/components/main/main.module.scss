@@ -1,4 +1,6 @@
-.main{
+@import "../globalVariables.scss";
+
+.main {
   background-image: url('../../../public/images/main.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -7,4 +9,10 @@
   flex-direction: column;
   justify-content: space-between;
   height: 130vh;
+  @include breackpoint(lg) {
+    height: 90vh;
+  }
+  @include breackpoint(sm) {
+    height: 70vh;
+  }
 }

@@ -40,7 +40,7 @@ export default memo(function mainSlider() {
     prevArrow: <SamplePrevArrow />
   }
   return (
-    <>
+    <div className='all'>
       <div className='shade'></div>
       <div className="slider">
         <Slider {...settings}>
@@ -56,6 +56,6 @@ export default memo(function mainSlider() {
         </Slider>
       </div>
       <hr />
-    </>
+    </div>
   )
 })

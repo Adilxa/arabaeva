@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import css from "./header.module.scss";
 import { topHeader, mainHeader, bottomHeader } from "../../constants/header";
 
 const Header = () => {
+  const [burger, setBurger] = useState(false);
   return (
     <>
       <header>
@@ -52,6 +53,23 @@ const Header = () => {
           ))}
         </div>
       </header>
+      <section className={css.burger}>
+        <img className={css.log} src="./images/logo.png" alt="logo" />
+        <img onClick={() => setBurger(!burger)} src="./images/burger.png" alt="burger" />
+      </section>
+      <div className={burger ? css.burgerContent : ''}>
+        {
+          burger && (
+            <>
+              {bottomHeader.map((el) => (
+                <div key={el.id}>
+                  <h1>{el.title}</h1>
+                </div>
+              ))}
+            </>
+          )
+        }
+      </div>
     </>
   )
 }

@@ -1,6 +1,9 @@
+@import "../globalVariables.scss";
+
 .main {
   width: 100%;
   background-color: rgb(40, 11, 11);
+  height: fit-content;
 
   .content {
     width: 80%;
@@ -9,44 +12,84 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-    .left{
-      img{
+
+    .left {
+      @include breackpoint(sm) {
+        display: none;
+      }
+
+      img {
         width: 200px;
         height: 70px;
       }
     }
-    .mid{
+
+    .mid {
       width: 20%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      img{
+
+      @include breackpoint(sm) {
+        display: none;
+      }
+
+      img {
         width: 15px;
         height: 15px;
       }
     }
-    .rigth{
+
+    .rigth {
       width: 25%;
-      p{
+
+      @include breackpoint(sm) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      img {
+        display: none;
+
+        @include breackpoint(sm) {
+          display: block;
+          width: 94px;
+          height: 33px;
+        }
+      }
+
+      p {
         color: white;
         font-weight: 100;
         line-height: 20px;
         font-size: 10px;
+
+        @include breackpoint(sm) {
+          font-size: 5px;
+          width: 150px;
+        }
       }
     }
   }
 }
-.footerBottom{
+
+.footerBottom {
   width: 100%;
   background-color: rgb(0, 0, 0);
 
-  .text{
+  .text {
     width: 80%;
     margin: 0 auto;
-    p{
+
+    p {
       color: rgba(255, 255, 255, 0.544);
-      font-size: 9px;
+      font-size: 8px;
       padding: 5px 0;
+      @include breackpoint(sm) {
+        font-size: 5px;
+      }
     }
   }
 }

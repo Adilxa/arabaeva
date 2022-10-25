@@ -1,10 +1,21 @@
+@import "../globalVariables.scss";
+
 header {
   width: 100%;
   height: 35vh;
   text-align: center;
   padding: 0 5%;
-  background-color: rgba(191, 118, 75, 0.861);
-
+  background-color: rgba(206, 124, 77, 0.861);
+  @include breackpoint(lg) {
+    width: 100%;
+    height: 25vh;
+  }
+  @include breackpoint(md) {
+    width: 100%;
+  }
+  @include breackpoint(sm) {
+    display: none;
+  }  
   .topHeader {
     width: 100%;
     height: 20%;
@@ -12,6 +23,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+
     .left {
       display: flex;
       align-items: center;
@@ -21,8 +33,13 @@ header {
 
       img {
         cursor: pointer;
-        width: 13px;
-        height: 13px;
+        width: 15px;
+        height: 15px;
+
+        @include breackpoint(md) {
+          width: 10px;
+          height: 10px;
+        }
       }
     }
 
@@ -35,10 +52,18 @@ header {
       h3 {
         color: rgba(255, 255, 255, 0.459);
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 300;
         transition: ease-in-out .4s;
         cursor: pointer;
+
+        @include breackpoint(lg) {
+          font-size: 9px;
+        }
+
+        @include breackpoint(md) {
+          font-size: 7px;
+        }
 
         &:hover {
           color: rgb(255, 255, 255);
@@ -55,10 +80,18 @@ header {
       p {
         color: rgba(255, 255, 255, 0.459);
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 300;
         transition: ease-in-out .4s;
         cursor: pointer;
+
+        @include breackpoint(lg) {
+          font-size: 9px;
+        }
+
+        @include breackpoint(md) {
+          font-size: 7px;
+        }
 
         &:hover {
           color: rgb(255, 255, 255);
@@ -66,7 +99,6 @@ header {
       }
     }
   }
-
   .mainHeader {
     width: 100%;
     display: flex;
@@ -78,7 +110,8 @@ header {
       width: 20%;
 
       img {
-        width: 100%;
+        width:100%;
+        height: min-content;
       }
     }
 
@@ -87,9 +120,48 @@ header {
       align-items: center;
       width: 70%;
       justify-content: space-between;
+
+      @include breackpoint(lg) {
+        width: 75%;
+      }
+
+      @include breackpoint(md) {
+        width: 75%;
+      }
+
+      #mainHeaderElement {
+        @include breackpoint(lg) {
+          width: fit-content;
+        }
+
+        @include breackpoint(md) {
+          width: fit-content;
+        }
+
+        div {
+          p {
+            @include breackpoint(lg) {
+              font-size: 9px;
+            }
+
+            @include breackpoint(md) {
+              font-size: 7px;
+            }
+          }
+
+          h4 {
+            @include breackpoint(lg) {
+              font-size: 9px;
+            }
+
+            @include breackpoint(md) {
+              font-size: 7px;
+            }
+          }
+        }
+      }
     }
   }
-
   .bottomHeader {
     display: flex;
     align-items: center;
@@ -98,12 +170,18 @@ header {
     height: 20%;
 
     h1 {
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 400;
       color: rgba(255, 255, 255, 0.312);
       cursor: pointer;
       transition: ease-in-out .4s;
 
+      @include breackpoint(lg) {
+        font-size: 9px;
+      }
+      @include breackpoint(md){
+        font-size: 7px;
+      }
       &:hover {
         color: rgba(255, 255, 255, 0.707);
       }
@@ -120,8 +198,6 @@ header {
     }
   }
 }
-
-
 #mainHeaderElement {
   display: flex;
   height: 10%;
@@ -145,6 +221,40 @@ header {
 
     h4 {
       color: rgba(255, 255, 255, 0.965);
+      font-size: small;
+    }
+  }
+}
+
+.burger{
+  display: none;
+  @include breackpoint(sm) {
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(206, 124, 77, 0.861);
+    .log{
+      width: 110px;
+      height: 35px;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.burgerContent{
+  width: 100%;
+  position: absolute;
+  top: 5vh;
+  background-color: rgba(206, 124, 77, 0.861);
+  padding: 3% 5%;
+  div{
+    h1{
+      color: white;
       font-size: small;
     }
   }

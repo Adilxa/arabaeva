@@ -1,33 +1,61 @@
-.wrapper{
+@import "../../globalVariables.scss";
+
+.wrapper {
   display: flex;
   width: 90%;
-  gap: 10px;
+  gap: 5px;
   height: 70px;
-  .box{
-    background-color: rgb(92, 57, 57);
-    width: 100px;
+  @include breackpoint(lg) {
+    width: 85%;
   }
-  .title{
+  .box {
+    background-color: rgb(92, 57, 57);
+    width: 80px;
+    @include breackpoint(lg) {
+      width: 70px;
+    }
+    @include breackpoint(md) {
+      width: 60px;
+    }
+    @include breackpoint(sm) {
+      width: 50px;
+    }
+  }
+
+  .title {
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    p{
+
+    p {
       font-size: 10px;
       color: black;
       font-weight: 600;
+      @include breackpoint(lg) {
+        font-size: 7px;
+        line-height: 15px;
+      }
     }
-    div{
+
+    div {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      p{
+
+      p {
         font-size: 9px;
+        @include breackpoint(lg) {
+          font-size: 5px;
+        }
       }
-      span{
+
+      span {
         font-size: 10px;
+        @include breackpoint(lg) {
+          font-size: 5px;
+        }
       }
     }
   }
